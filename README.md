@@ -70,8 +70,12 @@ An excerpt from the cut list:
 
 ## Architecture
 
+![LVA architecture](assets/architecture.png)
+
+<details><summary>Diagram source (Mermaid)</summary>
+
 ```mermaid
-flowchart LR
+flowchart TD
     A["Video file or URL"] --> B["Ingest: probe, 720p proxy, 16 kHz wav"]
     B --> C1["Audio: EBU R128 loudness, spikes, silences"]
     B --> C2["Scenes: cut detection"]
@@ -92,6 +96,8 @@ flowchart LR
     F --> G3["report.html contact sheet"]
     G1 --> H(["Human editor accepts, trims or rejects"])
 ```
+
+</details>
 
 **How a clip is scored**
 1. **Signals:** loudness curve, scene cuts, per-second motion energy and a word-timed transcript.
