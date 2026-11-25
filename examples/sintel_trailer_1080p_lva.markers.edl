@@ -1,0 +1,44 @@
+TITLE: SINTEL_TRAILER_1080P LVA CUTS MARKERS
+FCM: NON-DROP FRAME
+
+001  001      V     C        01:00:00:00 01:00:00:01 01:00:00:00 01:00:00:01  
+loudness spike +10 LU above the local level at 9.7s (+2 more spikes in the clip) / audio builds +16 LU over the first 10s from 0.0s / in on start of video at 0.0s, out on speech pause at 20.0s / speech (question): 'What brings you to the land of the Gatekeepers?' at 12.3s / 2 scene cuts within 5s from 16.5s (2 in the clip) / motion peak at 16.5s is in the top 13% of the video |C:ResolveColorGreen |M:c01 score 0.57 [action, buildup] |D:1
+
+002  001      V     C        01:00:06:05 01:00:06:06 01:00:06:05 01:00:06:06  
+c01: loudness spike +6 LU at 6.2s in source |C:ResolveColorRed |M:loudness spike +6 LU |D:1
+
+003  001      V     C        01:00:09:17 01:00:09:18 01:00:09:17 01:00:09:18  
+c01: loudness spike +10 LU at 9.7s in source |C:ResolveColorRed |M:loudness spike +10 LU |D:1
+
+004  001      V     C        01:00:12:07 01:00:12:08 01:00:12:07 01:00:12:08  
+c01: 'What brings you to the land of the...' (question) at 12.3s in source |C:ResolveColorBlue |M:'What brings you to the land of the...' (question) |D:1
+
+005  001      V     C        01:00:16:12 01:00:16:13 01:00:16:12 01:00:16:13  
+c01: motion peak (top 13% of video) at 16.5s in source |C:ResolveColorYellow |M:motion peak (top 13% of video) |D:1
+
+006  001      V     C        01:00:16:22 01:00:16:23 01:00:16:22 01:00:16:23  
+c01: loudness spike +8 LU at 16.9s in source |C:ResolveColorRed |M:loudness spike +8 LU |D:1
+
+007  001      V     C        01:00:20:00 01:00:20:01 01:00:20:00 01:00:20:01  
+loudness spike +11 LU above the local level at 26.7s (+2 more spikes in the clip) / motion peak at 30.5s is in the top 2% of the video / 4 scene cuts within 5s from 23.8s (4 in the clip) / audio builds +14 LU over the first 8s from 22.0s |C:ResolveColorGreen |M:c02 score 0.67 [action, fast-cuts, buildup] |D:1
+
+008  001      V     C        01:00:21:19 01:00:21:20 01:00:21:19 01:00:21:20  
+c02: 4 scene cuts within 5s at 23.8s in source |C:ResolveColorCyan |M:4 scene cuts within 5s |D:1
+
+009  001      V     C        01:00:24:17 01:00:24:18 01:00:24:17 01:00:24:18  
+c02: loudness spike +11 LU at 26.7s in source |C:ResolveColorRed |M:loudness spike +11 LU |D:1
+
+010  001      V     C        01:00:26:17 01:00:26:18 01:00:26:17 01:00:26:18  
+c02: loudness spike +9 LU at 28.7s in source |C:ResolveColorRed |M:loudness spike +9 LU |D:1
+
+011  001      V     C        01:00:28:12 01:00:28:13 01:00:28:12 01:00:28:13  
+c02: motion peak (top 2% of video) at 30.5s in source |C:ResolveColorYellow |M:motion peak (top 2% of video) |D:1
+
+012  001      V     C        01:00:28:17 01:00:28:18 01:00:28:17 01:00:28:18  
+c02: loudness spike +11 LU at 30.7s in source |C:ResolveColorRed |M:loudness spike +11 LU |D:1
+
+013  001      V     C        01:00:36:23 01:00:37:00 01:00:36:23 01:00:37:00  
+loudness spike +11 LU above the local level at 47.5s / in on speech pause at 41.2s, out on end of video at 52.2s |C:ResolveColorGreen |M:c03 score 0.30 [action] |D:1
+
+014  001      V     C        01:00:43:06 01:00:43:07 01:00:43:06 01:00:43:07  
+c03: loudness spike +11 LU at 47.5s in source |C:ResolveColorRed |M:loudness spike +11 LU |D:1

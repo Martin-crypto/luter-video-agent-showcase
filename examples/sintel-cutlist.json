@@ -1,0 +1,366 @@
+{
+  "version": "1.0",
+  "source": {
+    "path": "/path/to/samples/sintel_trailer_1080p.mp4",
+    "fps": 24.0,
+    "fps_rational": "24/1",
+    "duration_s": 52.208333,
+    "width": 1920,
+    "height": 1080,
+    "timecode_start": "00:00:00:00",
+    "has_audio": true,
+    "audio_channels": 2,
+    "audio_sample_rate": 48000,
+    "media_id": "sintel-trailer-1080p-746fc69c"
+  },
+  "generated_by": {
+    "tool": "lva",
+    "version": "0.1.0",
+    "signals": [
+      "transcript",
+      "scenes",
+      "audio",
+      "motion"
+    ],
+    "preset": null,
+    "rerank": null,
+    "weights": {
+      "audio_peak": 0.24,
+      "buildup": 0.08,
+      "motion": 0.18,
+      "scene_density": 0.1,
+      "speech_hook": 0.22,
+      "events": 0.0,
+      "clean_cut": 0.1,
+      "duration_fit": 0.08
+    }
+  },
+  "clips": [
+    {
+      "id": "c01",
+      "in_s": 0.0,
+      "out_s": 20.0,
+      "score": 0.5683,
+      "score_breakdown": {
+        "audio_peak": 0.1975,
+        "buildup": 0.08,
+        "motion": 0.0301,
+        "scene_density": 0.0457,
+        "speech_hook": 0.055,
+        "clean_cut": 0.08,
+        "duration_fit": 0.08
+      },
+      "reasons": [
+        "loudness spike +10 LU above the local level at 9.7s (+2 more spikes in the clip)",
+        "audio builds +16 LU over the first 10s from 0.0s",
+        "in on start of video at 0.0s, out on speech pause at 20.0s",
+        "speech (question): 'What brings you to the land of the Gatekeepers?' at 12.3s",
+        "2 scene cuts within 5s from 16.5s (2 in the clip)",
+        "motion peak at 16.5s is in the top 13% of the video"
+      ],
+      "hook_text": "What brings you to the land of the…",
+      "caption_words": [
+        {
+          "w": "The",
+          "s": 11.66,
+          "e": 12.3
+        },
+        {
+          "w": "End",
+          "s": 12.3,
+          "e": 12.35
+        },
+        {
+          "w": "What",
+          "s": 12.3,
+          "e": 12.35
+        },
+        {
+          "w": "brings",
+          "s": 12.3,
+          "e": 12.62
+        },
+        {
+          "w": "you",
+          "s": 12.62,
+          "e": 12.8
+        },
+        {
+          "w": "to",
+          "s": 12.8,
+          "e": 12.92
+        },
+        {
+          "w": "the",
+          "s": 12.92,
+          "e": 13.06
+        },
+        {
+          "w": "land",
+          "s": 13.06,
+          "e": 13.36
+        },
+        {
+          "w": "of",
+          "s": 13.36,
+          "e": 13.58
+        },
+        {
+          "w": "the",
+          "s": 13.58,
+          "e": 13.66
+        },
+        {
+          "w": "Gatekeepers?",
+          "s": 13.66,
+          "e": 14.18
+        },
+        {
+          "w": "I'm",
+          "s": 18.12,
+          "e": 18.76
+        },
+        {
+          "w": "searching",
+          "s": 18.76,
+          "e": 19.16
+        },
+        {
+          "w": "for",
+          "s": 19.16,
+          "e": 19.42
+        },
+        {
+          "w": "someone.",
+          "s": 19.42,
+          "e": 19.78
+        }
+      ],
+      "transcript": "The End What brings you to the land of the Gatekeepers? I'm searching for someone.",
+      "markers": [
+        {
+          "t": 6.2,
+          "kind": "audio",
+          "label": "loudness spike +6 LU"
+        },
+        {
+          "t": 9.7,
+          "kind": "audio",
+          "label": "loudness spike +10 LU"
+        },
+        {
+          "t": 12.3,
+          "kind": "speech",
+          "label": "'What brings you to the land of the…' (question)"
+        },
+        {
+          "t": 16.5,
+          "kind": "motion",
+          "label": "motion peak (top 13% of video)"
+        },
+        {
+          "t": 16.5,
+          "kind": "scene",
+          "label": "2 scene cuts within 5s"
+        },
+        {
+          "t": 16.9,
+          "kind": "audio",
+          "label": "loudness spike +8 LU"
+        }
+      ],
+      "tags": [
+        "action",
+        "buildup"
+      ],
+      "flags": [],
+      "rank": 2,
+      "pool_id": "p02"
+    },
+    {
+      "id": "c02",
+      "in_s": 22.0,
+      "out_s": 38.958333,
+      "score": 0.6713,
+      "score_breakdown": {
+        "audio_peak": 0.24,
+        "buildup": 0.08,
+        "motion": 0.1619,
+        "scene_density": 0.0936,
+        "speech_hook": 0.0,
+        "clean_cut": 0.03,
+        "duration_fit": 0.0658
+      },
+      "reasons": [
+        "loudness spike +11 LU above the local level at 26.7s (+2 more spikes in the clip)",
+        "motion peak at 30.5s is in the top 2% of the video",
+        "4 scene cuts within 5s from 23.8s (4 in the clip)",
+        "audio builds +14 LU over the first 8s from 22.0s"
+      ],
+      "hook_text": null,
+      "caption_words": [
+        {
+          "w": "A",
+          "s": 36.46,
+          "e": 36.98
+        },
+        {
+          "w": "dangerous",
+          "s": 36.98,
+          "e": 37.34
+        },
+        {
+          "w": "quest",
+          "s": 37.34,
+          "e": 37.8
+        },
+        {
+          "w": "for",
+          "s": 37.8,
+          "e": 38.06
+        },
+        {
+          "w": "a",
+          "s": 38.06,
+          "e": 38.24
+        },
+        {
+          "w": "lone",
+          "s": 38.24,
+          "e": 38.44
+        },
+        {
+          "w": "hunter.",
+          "s": 38.44,
+          "e": 38.76
+        }
+      ],
+      "transcript": "A dangerous quest for a lone hunter.",
+      "markers": [
+        {
+          "t": 23.79,
+          "kind": "scene",
+          "label": "4 scene cuts within 5s"
+        },
+        {
+          "t": 26.7,
+          "kind": "audio",
+          "label": "loudness spike +11 LU"
+        },
+        {
+          "t": 28.7,
+          "kind": "audio",
+          "label": "loudness spike +9 LU"
+        },
+        {
+          "t": 30.5,
+          "kind": "motion",
+          "label": "motion peak (top 2% of video)"
+        },
+        {
+          "t": 30.7,
+          "kind": "audio",
+          "label": "loudness spike +11 LU"
+        }
+      ],
+      "tags": [
+        "action",
+        "fast-cuts",
+        "buildup"
+      ],
+      "flags": [
+        "unsnapped_start"
+      ],
+      "rank": 1,
+      "pool_id": "p01"
+    },
+    {
+      "id": "c03",
+      "in_s": 41.208333,
+      "out_s": 52.208333,
+      "score": 0.2954,
+      "score_breakdown": {
+        "audio_peak": 0.1774,
+        "buildup": 0.0,
+        "motion": 0.0,
+        "scene_density": 0.0,
+        "speech_hook": 0.0,
+        "clean_cut": 0.08,
+        "duration_fit": 0.038
+      },
+      "reasons": [
+        "loudness spike +11 LU above the local level at 47.5s",
+        "in on speech pause at 41.2s, out on end of video at 52.2s"
+      ],
+      "hook_text": null,
+      "caption_words": [
+        {
+          "w": "I've",
+          "s": 41.34,
+          "e": 41.86
+        },
+        {
+          "w": "been",
+          "s": 41.86,
+          "e": 41.98
+        },
+        {
+          "w": "alone",
+          "s": 41.98,
+          "e": 42.28
+        },
+        {
+          "w": "for",
+          "s": 42.28,
+          "e": 42.48
+        },
+        {
+          "w": "as",
+          "s": 42.48,
+          "e": 42.68
+        },
+        {
+          "w": "long",
+          "s": 42.68,
+          "e": 42.84
+        },
+        {
+          "w": "as",
+          "s": 42.84,
+          "e": 43.02
+        },
+        {
+          "w": "I",
+          "s": 43.02,
+          "e": 43.12
+        },
+        {
+          "w": "can",
+          "s": 43.12,
+          "e": 43.28
+        },
+        {
+          "w": "remember.",
+          "s": 43.28,
+          "e": 43.76
+        }
+      ],
+      "transcript": "I've been alone for as long as I can remember.",
+      "markers": [
+        {
+          "t": 47.5,
+          "kind": "audio",
+          "label": "loudness spike +11 LU"
+        }
+      ],
+      "tags": [
+        "action"
+      ],
+      "flags": [
+        "weak_evidence"
+      ],
+      "rank": 3,
+      "pool_id": "p03"
+    }
+  ]
+}

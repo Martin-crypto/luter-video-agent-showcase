@@ -1,0 +1,870 @@
+{
+    "OTIO_SCHEMA": "Timeline.1",
+    "metadata": {
+        "lva": {
+            "fps": "24/1",
+            "generated_by": {
+                "preset": null,
+                "rerank": null,
+                "signals": [
+                    "transcript",
+                    "scenes",
+                    "audio",
+                    "motion"
+                ],
+                "tool": "lva",
+                "version": "0.1.0",
+                "weights": {
+                    "audio_peak": 0.24,
+                    "buildup": 0.08,
+                    "clean_cut": 0.1,
+                    "duration_fit": 0.08,
+                    "events": 0.0,
+                    "motion": 0.18,
+                    "scene_density": 0.1,
+                    "speech_hook": 0.22
+                }
+            },
+            "height": 1080,
+            "width": 1920
+        }
+    },
+    "name": "sintel_trailer_1080p LVA cuts",
+    "global_start_time": {
+        "OTIO_SCHEMA": "RationalTime.1",
+        "rate": 24.0,
+        "value": 86400.0
+    },
+    "tracks": {
+        "OTIO_SCHEMA": "Stack.1",
+        "metadata": {},
+        "name": "tracks",
+        "source_range": null,
+        "effects": [],
+        "markers": [],
+        "enabled": true,
+        "color": null,
+        "children": [
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {},
+                "name": "V1",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "color": null,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "lva": {
+                                "flags": [],
+                                "hook_text": "What brings you to the land of the…",
+                                "id": "c01",
+                                "in_s": 0.0,
+                                "out_s": 20.0,
+                                "rank": 2,
+                                "reasons": [
+                                    "loudness spike +10 LU above the local level at 9.7s (+2 more spikes in the clip)",
+                                    "audio builds +16 LU over the first 10s from 0.0s",
+                                    "in on start of video at 0.0s, out on speech pause at 20.0s",
+                                    "speech (question): 'What brings you to the land of the Gatekeepers?' at 12.3s",
+                                    "2 scene cuts within 5s from 16.5s (2 in the clip)",
+                                    "motion peak at 16.5s is in the top 13% of the video"
+                                ],
+                                "score": 0.5683,
+                                "score_breakdown": {
+                                    "audio_peak": 0.1975,
+                                    "buildup": 0.08,
+                                    "clean_cut": 0.08,
+                                    "duration_fit": 0.08,
+                                    "motion": 0.0301,
+                                    "scene_density": 0.0457,
+                                    "speech_hook": 0.055
+                                },
+                                "tags": [
+                                    "action",
+                                    "buildup"
+                                ]
+                            }
+                        },
+                        "name": "c01 sintel_trailer_1080p",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 480.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "loudness spike +10 LU above the local level at 9.7s (+2 more spikes in the clip) | audio builds +16 LU over the first 10s from 0.0s | in on start of video at 0.0s, out on speech pause at 20.0s | speech (question): 'What brings you to the land of the Gatekeepers?' at 12.3s | 2 scene cuts within 5s from 16.5s (2 in the clip) | motion peak at 16.5s is in the top 13% of the video"
+                                    },
+                                    "lva": {
+                                        "kind": "summary",
+                                        "note": "loudness spike +10 LU above the local level at 9.7s (+2 more spikes in the clip) | audio builds +16 LU over the first 10s from 0.0s | in on start of video at 0.0s, out on speech pause at 20.0s | speech (question): 'What brings you to the land of the Gatekeepers?' at 12.3s | 2 scene cuts within 5s from 16.5s (2 in the clip) | motion peak at 16.5s is in the top 13% of the video"
+                                    }
+                                },
+                                "name": "c01 score 0.57 [action, buildup]",
+                                "color": "GREEN",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "comment": "loudness spike +10 LU above the local level at 9.7s (+2 more spikes in the clip) | audio builds +16 LU over the first 10s from 0.0s | in on start of video at 0.0s, out on speech pause at 20.0s | speech (question): 'What brings you to the land of the Gatekeepers?' at 12.3s | 2 scene cuts within 5s from 16.5s (2 in the clip) | motion peak at 16.5s is in the top 13% of the video"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c01: loudness spike +6 LU at 6.2s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "audio",
+                                        "note": "c01: loudness spike +6 LU at 6.2s in source"
+                                    }
+                                },
+                                "name": "loudness spike +6 LU",
+                                "color": "RED",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 149.0
+                                    }
+                                },
+                                "comment": "c01: loudness spike +6 LU at 6.2s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c01: loudness spike +10 LU at 9.7s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "audio",
+                                        "note": "c01: loudness spike +10 LU at 9.7s in source"
+                                    }
+                                },
+                                "name": "loudness spike +10 LU",
+                                "color": "RED",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 233.0
+                                    }
+                                },
+                                "comment": "c01: loudness spike +10 LU at 9.7s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c01: 'What brings you to the land of the…' (question) at 12.3s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "speech",
+                                        "note": "c01: 'What brings you to the land of the…' (question) at 12.3s in source"
+                                    }
+                                },
+                                "name": "'What brings you to the land of the…' (question)",
+                                "color": "BLUE",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 295.0
+                                    }
+                                },
+                                "comment": "c01: 'What brings you to the land of the…' (question) at 12.3s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c01: motion peak (top 13% of video) at 16.5s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "motion",
+                                        "note": "c01: motion peak (top 13% of video) at 16.5s in source"
+                                    }
+                                },
+                                "name": "motion peak (top 13% of video)",
+                                "color": "YELLOW",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 396.0
+                                    }
+                                },
+                                "comment": "c01: motion peak (top 13% of video) at 16.5s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c01: loudness spike +8 LU at 16.9s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "audio",
+                                        "note": "c01: loudness spike +8 LU at 16.9s in source"
+                                    }
+                                },
+                                "name": "loudness spike +8 LU",
+                                "color": "RED",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 406.0
+                                    }
+                                },
+                                "comment": "c01: loudness spike +8 LU at 16.9s in source"
+                            }
+                        ],
+                        "enabled": true,
+                        "color": null,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "lva": {
+                                        "path": "/path/to/samples/sintel_trailer_1080p.mp4"
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1253.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file:///path/to/samples/sintel_trailer_1080p.mp4"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "lva": {
+                                "flags": [
+                                    "unsnapped_start"
+                                ],
+                                "hook_text": null,
+                                "id": "c02",
+                                "in_s": 22.0,
+                                "out_s": 38.958333,
+                                "rank": 1,
+                                "reasons": [
+                                    "loudness spike +11 LU above the local level at 26.7s (+2 more spikes in the clip)",
+                                    "motion peak at 30.5s is in the top 2% of the video",
+                                    "4 scene cuts within 5s from 23.8s (4 in the clip)",
+                                    "audio builds +14 LU over the first 8s from 22.0s"
+                                ],
+                                "score": 0.6713,
+                                "score_breakdown": {
+                                    "audio_peak": 0.24,
+                                    "buildup": 0.08,
+                                    "clean_cut": 0.03,
+                                    "duration_fit": 0.0658,
+                                    "motion": 0.1619,
+                                    "scene_density": 0.0936,
+                                    "speech_hook": 0.0
+                                },
+                                "tags": [
+                                    "action",
+                                    "fast-cuts",
+                                    "buildup"
+                                ]
+                            }
+                        },
+                        "name": "c02 sintel_trailer_1080p",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 407.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 528.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "loudness spike +11 LU above the local level at 26.7s (+2 more spikes in the clip) | motion peak at 30.5s is in the top 2% of the video | 4 scene cuts within 5s from 23.8s (4 in the clip) | audio builds +14 LU over the first 8s from 22.0s"
+                                    },
+                                    "lva": {
+                                        "kind": "summary",
+                                        "note": "loudness spike +11 LU above the local level at 26.7s (+2 more spikes in the clip) | motion peak at 30.5s is in the top 2% of the video | 4 scene cuts within 5s from 23.8s (4 in the clip) | audio builds +14 LU over the first 8s from 22.0s"
+                                    }
+                                },
+                                "name": "c02 score 0.67 [action, fast-cuts, buildup]",
+                                "color": "GREEN",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 528.0
+                                    }
+                                },
+                                "comment": "loudness spike +11 LU above the local level at 26.7s (+2 more spikes in the clip) | motion peak at 30.5s is in the top 2% of the video | 4 scene cuts within 5s from 23.8s (4 in the clip) | audio builds +14 LU over the first 8s from 22.0s"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c02: 4 scene cuts within 5s at 23.8s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "scene",
+                                        "note": "c02: 4 scene cuts within 5s at 23.8s in source"
+                                    }
+                                },
+                                "name": "4 scene cuts within 5s",
+                                "color": "CYAN",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 571.0
+                                    }
+                                },
+                                "comment": "c02: 4 scene cuts within 5s at 23.8s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c02: loudness spike +11 LU at 26.7s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "audio",
+                                        "note": "c02: loudness spike +11 LU at 26.7s in source"
+                                    }
+                                },
+                                "name": "loudness spike +11 LU",
+                                "color": "RED",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 641.0
+                                    }
+                                },
+                                "comment": "c02: loudness spike +11 LU at 26.7s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c02: loudness spike +9 LU at 28.7s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "audio",
+                                        "note": "c02: loudness spike +9 LU at 28.7s in source"
+                                    }
+                                },
+                                "name": "loudness spike +9 LU",
+                                "color": "RED",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 689.0
+                                    }
+                                },
+                                "comment": "c02: loudness spike +9 LU at 28.7s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c02: motion peak (top 2% of video) at 30.5s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "motion",
+                                        "note": "c02: motion peak (top 2% of video) at 30.5s in source"
+                                    }
+                                },
+                                "name": "motion peak (top 2% of video)",
+                                "color": "YELLOW",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 732.0
+                                    }
+                                },
+                                "comment": "c02: motion peak (top 2% of video) at 30.5s in source"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c02: loudness spike +11 LU at 30.7s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "audio",
+                                        "note": "c02: loudness spike +11 LU at 30.7s in source"
+                                    }
+                                },
+                                "name": "loudness spike +11 LU",
+                                "color": "RED",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 737.0
+                                    }
+                                },
+                                "comment": "c02: loudness spike +11 LU at 30.7s in source"
+                            }
+                        ],
+                        "enabled": true,
+                        "color": null,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "lva": {
+                                        "path": "/path/to/samples/sintel_trailer_1080p.mp4"
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1253.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file:///path/to/samples/sintel_trailer_1080p.mp4"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "lva": {
+                                "flags": [
+                                    "weak_evidence"
+                                ],
+                                "hook_text": null,
+                                "id": "c03",
+                                "in_s": 41.208333,
+                                "out_s": 52.208333,
+                                "rank": 3,
+                                "reasons": [
+                                    "loudness spike +11 LU above the local level at 47.5s",
+                                    "in on speech pause at 41.2s, out on end of video at 52.2s"
+                                ],
+                                "score": 0.2954,
+                                "score_breakdown": {
+                                    "audio_peak": 0.1774,
+                                    "buildup": 0.0,
+                                    "clean_cut": 0.08,
+                                    "duration_fit": 0.038,
+                                    "motion": 0.0,
+                                    "scene_density": 0.0,
+                                    "speech_hook": 0.0
+                                },
+                                "tags": [
+                                    "action"
+                                ]
+                            }
+                        },
+                        "name": "c03 sintel_trailer_1080p",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 264.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 989.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "loudness spike +11 LU above the local level at 47.5s | in on speech pause at 41.2s, out on end of video at 52.2s"
+                                    },
+                                    "lva": {
+                                        "kind": "summary",
+                                        "note": "loudness spike +11 LU above the local level at 47.5s | in on speech pause at 41.2s, out on end of video at 52.2s"
+                                    }
+                                },
+                                "name": "c03 score 0.30 [action]",
+                                "color": "GREEN",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 989.0
+                                    }
+                                },
+                                "comment": "loudness spike +11 LU above the local level at 47.5s | in on speech pause at 41.2s, out on end of video at 52.2s"
+                            },
+                            {
+                                "OTIO_SCHEMA": "Marker.2",
+                                "metadata": {
+                                    "Resolve_OTIO": {
+                                        "Keywords": [],
+                                        "Note": "c03: loudness spike +11 LU at 47.5s in source"
+                                    },
+                                    "lva": {
+                                        "kind": "audio",
+                                        "note": "c03: loudness spike +11 LU at 47.5s in source"
+                                    }
+                                },
+                                "name": "loudness spike +11 LU",
+                                "color": "RED",
+                                "marked_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1140.0
+                                    }
+                                },
+                                "comment": "c03: loudness spike +11 LU at 47.5s in source"
+                            }
+                        ],
+                        "enabled": true,
+                        "color": null,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "lva": {
+                                        "path": "/path/to/samples/sintel_trailer_1080p.mp4"
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1253.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file:///path/to/samples/sintel_trailer_1080p.mp4"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Video"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {},
+                "name": "A1",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "color": null,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {},
+                        "name": "c01 sintel_trailer_1080p",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 480.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "color": null,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "lva": {
+                                        "path": "/path/to/samples/sintel_trailer_1080p.mp4"
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1253.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file:///path/to/samples/sintel_trailer_1080p.mp4"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {},
+                        "name": "c02 sintel_trailer_1080p",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 407.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 528.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "color": null,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "lva": {
+                                        "path": "/path/to/samples/sintel_trailer_1080p.mp4"
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1253.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file:///path/to/samples/sintel_trailer_1080p.mp4"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {},
+                        "name": "c03 sintel_trailer_1080p",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 264.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 24.0,
+                                "value": 989.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "color": null,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "lva": {
+                                        "path": "/path/to/samples/sintel_trailer_1080p.mp4"
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 1253.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 24.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file:///path/to/samples/sintel_trailer_1080p.mp4"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            }
+        ]
+    }
+}
