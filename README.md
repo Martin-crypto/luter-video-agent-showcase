@@ -72,21 +72,25 @@ An excerpt from the cut list:
 
 ```mermaid
 flowchart LR
-    A[Video file or URL] --> B[Ingest<br/>probe · 720p proxy · 16 kHz wav]
-    B --> C1[Audio<br/>EBU R128 loudness,<br/>spikes, silences]
-    B --> C2[Scenes<br/>cut detection]
-    B --> C3[Motion<br/>frame-difference energy]
-    B --> C4[Transcript<br/>word-timed Whisper,<br/>hallucinations dropped]
-    B -. optional .-> C5[Vision / on-screen events]
-    C1 & C2 & C3 & C4 & C5 --> D[Candidate windows<br/>start/end on silence,<br/>cut or speech pause]
-    D --> E[Score<br/>normalised features ·<br/>weighted sum · overlap suppression]
-    E -. optional .-> R[Local LLM rerank<br/>compact summaries, 40% blend]
-    E --> F[Cut list<br/>JSON schema · reasons · weak_evidence]
-    R --> F
-    F --> G1[Timelines<br/>OTIO · FCPXML 1.10 · FCP7 XML · EDL<br/>reasons as frame markers]
-    F --> G2[Renders<br/>9:16 / 16:9 / 1:1 / 4:5,<br/>captions, hook, -14 LUFS]
-    F --> G3[report.html]
-    G1 --> H((Human editor<br/>accepts / trims / rejects))
+    A["Video file or URL"] --> B["Ingest: probe, 720p proxy, 16 kHz wav"]
+    B --> C1["Audio: EBU R128 loudness, spikes, silences"]
+    B --> C2["Scenes: cut detection"]
+    B --> C3["Motion: frame-difference energy"]
+    B --> C4["Transcript: word-timed Whisper"]
+    B -.->|optional| C5["Vision and on-screen events"]
+    C1 --> D["Candidate windows on natural boundaries"]
+    C2 --> D
+    C3 --> D
+    C4 --> D
+    C5 -.-> D
+    D --> E["Score: normalised features, weighted sum, overlap suppression"]
+    E -.->|optional| R["Local LLM rerank, 40 percent blend"]
+    E --> F["Cut list: JSON schema, reasons, weak_evidence flag"]
+    R -.-> F
+    F --> G1["Timelines: OTIO, FCPXML, FCP7 XML, EDL with reasons as markers"]
+    F --> G2["Renders: vertical and wide, captions, hook title"]
+    F --> G3["report.html contact sheet"]
+    G1 --> H(["Human editor accepts, trims or rejects"])
 ```
 
 **How a clip is scored**
