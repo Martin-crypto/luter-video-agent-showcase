@@ -70,7 +70,7 @@ An excerpt from the cut list:
 
 ## Architecture
 
-![LVA architecture](assets/architecture.png)
+<p align="center"><img src="assets/architecture.png" alt="LVA architecture" width="520"></p>
 
 <details><summary>Diagram source (Mermaid)</summary>
 
